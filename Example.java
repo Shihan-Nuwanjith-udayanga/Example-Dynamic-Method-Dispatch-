@@ -16,21 +16,21 @@ class C extends B {
 class Example{
 	public static void main(String args[]){
 		A a1=new A();
-		a1.myMethod();	//Line 1--> no dispatch
+		a1.myMethod();	//no dispatch
 
 		a1=new B();	
-		a1.myMethod();	//Line 2-->dispatch 
+		a1.myMethod();	//dispatch 
 		
 		a1=new C();
-		a1.myMethod();	//Line 3-->dispatch
+		a1.myMethod();	//dispatch
 		
 		B b1=new B();
-		b1.myMethod();	//Line 4-->no dispatch
+		b1.myMethod();	//no dispatch
 		
 		b1=new C();
-		b1.myMethod();	//Line 5-->dispatch
+		b1.myMethod();	//dispatch
 	
 		C c1=new C();
-		c1.myMethod();	//Line 6-->no dispatch
+		c1.myMethod();	//no dispatch
 	}
 }
